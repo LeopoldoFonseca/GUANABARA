@@ -1,0 +1,161 @@
+<!-- CADERNO HTML 5 -->
+
+<!-- ---------------------------------------------- -->
+
+
+<!-- TABELAS -->
+
+<!-- Títulos de tabelas -->
+
+	<caption>Título da tabela</caption>
+
+<!-- ---------------------------------------------- -->
+
+
+
+<!-- Tags semânticas em tabelas
+
+	Anatomia para tabelas grandes:
+
+	TABLE
+		THEAD
+			TR, TD, TH
+		TBODY
+			TR, TD, TH
+		TFOOT
+			TR, TD, TH -->
+
+<!-- ---------------------------------------------- -->
+
+
+<!-- Títulos de tabelas -->
+
+	<caption>Título da tabela</caption>
+
+<!-- ---------------------------------------------- -->
+
+
+<!-- Escopo de títulos -->
+
+	scope="xxx"
+
+<!-- A função 'scope' define os escopos dos títulos nas tabelas para formatação. Exemplo de uso: -->
+
+	<th scope="col">Estado</th> <!-- Onde 'Estado' é título da coluna. com esta definição, é possível formatar a coluna da tabela -->
+
+	<th scope="row">Total</th> <!-- Onde 'Total' é título da linha. com esta definição, é possível formatar a coluna da tabela -->
+
+<!-- ---------------------------------------------- -->
+
+
+
+<!-- Escopos de grupos -->
+<!-- Obs.: só existe escopo em '<th>'. Exemplo: -->
+
+	xxxxxx
+
+<!-- ---------------------------------------------- -->
+
+
+
+<!-- Mesclagem de células  -->
+<!-- Existem mesclagens para colunas e mesclagens para linhas. Para expandir (mesclar) linha, o comando é 'colspan:"n linhas"'. Para expandir (mesclar) colunas, o comando é 'rowspan="n colunas"'.  Exemplo: -->
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">L</td>
+        </tr>
+    </table>
+
+/* --------------------------------- */
+
+
+
+
+
+<!-- XXXXX -->
+
+	XXXXX
+
+<!-- ---------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CADERNO CSS 3 */
+
+
+/* Efeito zebrado */
+
+	tbody > tr:nth-child(2n) {
+		background-color: lightgray; /* onde 'tr' é 'table row', ou seja, linha, e 'nth-child' é pseudo-classe de 'tr' e (2n) é atributo que considera linha sim, linha não. outros atributos são 'odd' = ímpar e 'even' = par. */
+
+/* --------------------------------- */
+
+
+
+/* Cabeçalho fixo */
+
+	tbody > tr:nth-child(2n) {
+		background-color: lightgray; /* onde 'tr' é 'table row', ou seja, linha, e 'nth-child' é pseudo-classe de 'tr' e (2n) é atributo que considera linha sim, linha não. outros atributos são 'odd' = ímpar e 'even' = par. */
+
+/* --------------------------------- */
+
+
+
+
+/* Cabeçalho fixo */
+/* Para que este efeito é necessário alterar o posicionamento do cabeçalho em relação a tabela. Na tabela, a propriedade 'position' deve ser definida como 'relative' e no cabeçalho deve ser definida como 'sticky'. Exemplo: */
+
+thead > tr > th {
+    position: sticky;
+    background-color: rgb(71, 70, 70);
+    top: -1px;
+}
+
+/* --------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
